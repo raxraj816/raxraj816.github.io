@@ -60,6 +60,10 @@
 
       &:hover {
         transform: scale(1.1);
+
+        @include mobile {
+          transform: scale(1);
+        }
       }
 
       .top {
