@@ -16,7 +16,7 @@ export default function Testimonials() {
       title: "Senior Developer",
       img: "assets/Amol Deole.jpg",
       icon: "assets/linkedin.png",
-      desc: "Raj Kumar did an exceptional job on our projects with him at Tudip. As I remember, Raj Kumar was a very productive person and is a multi-skilled person with vast knowledge. He is careful, proactive, self motivated and intelligent team player.",
+      desc: "Raj Kumar did an exceptional job on our projects with him at Tudip Technologies. As I remember, Raj Kumar was a very productive person and is a multi-skilled person with vast knowledge. He is careful, proactive, self motivated and intelligent team player.",
       featured: true,
     },
   ];
