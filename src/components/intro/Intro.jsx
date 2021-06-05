@@ -24,12 +24,21 @@ export default function Intro() {
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
-          <h1>Raj Kumar</h1>
+          <h1>
+            Raj Kumar{" "}
+            <a
+              href="https://www.linkedin.com/in/raxraj816/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img src="assets/linkedin.png" alt="" />
+            </a>
+          </h1>
           <h3>
             Freelance <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a className="down-arrow" href="#portfolio">
           <img src="assets/down.png" alt="" />
         </a>
       </div>

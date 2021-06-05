@@ -57,6 +57,10 @@
         font-size: 60px;
         margin: 10px 0;
 
+        img {
+          height: 25px;
+        }
+
         @include mobile {
           font-size: 40px;
         }
@@ -90,7 +94,7 @@
         }
       }
     }
-    a {
+    .down-arrow {
       position: absolute;
       bottom: 10px;
       left: 40%;

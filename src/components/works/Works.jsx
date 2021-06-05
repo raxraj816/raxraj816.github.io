@@ -8,15 +8,15 @@ export default function Works() {
       id: "1",
       icon: "/assets/globe.png",
       title: "Web Application",
-      desc: "React, Redux, TypeScript, Next.js, GraphQL, Node, Express, NoSQL/SQL, and AWS",
-      img: "https://miro.medium.com/max/2560/1*rvGT0t8QWinxdNbtWfOkaw.png?auto=format&q=60&fit=max&w=930",
+      desc: "React, TypeScript, Next.js, GraphQL, Node, NoSQL/SQL, AWS and Docker",
+      img: "/assets/React_Node.jpg",
     },
     {
       id: "2",
       icon: "./assets/mobile.png",
       title: "Mobile Application",
       desc: "React Native",
-      img: "https://miro.medium.com/max/1050/1*e9kB0lrzur0Gfv4XKH5_Ng.jpeg?auto=format&q=60&fit=max&w=930",
+      img: "/assets/React_Native.png",
     },
   ];
 
@@ -33,7 +33,7 @@ export default function Works() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div key={d?.id} className="container">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -42,18 +42,10 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
                 </div>
               </div>
               <div className="right">
-                <img
-                  src={
-                    d.img
-                      ? d.img
-                      : "https://miro.medium.com/max/2208/1*cKmzD1G7LUUS2XlDpI5m2Q.gif"
-                  }
-                  alt=""
-                />
+                <img src={d.img} alt="" />
               </div>
             </div>
           </div>
