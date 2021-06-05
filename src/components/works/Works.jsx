@@ -9,20 +9,20 @@ export default function Works() {
       icon: "/assets/globe.png",
       title: "Web Application",
       desc: "React, TypeScript, Next.js, GraphQL, Node, NoSQL/SQL, AWS and Docker",
-      img: "/assets/React_Node.jpg",
+      img: "/assets/react.jpg",
     },
     {
       id: "2",
       icon: "./assets/mobile.png",
       title: "Mobile Application",
       desc: "React Native",
-      img: "/assets/React_Native.png",
+      img: "/assets/native.png",
     },
   ];
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
 

@@ -7,6 +7,10 @@
   justify-content: center;
   position: relative;
 
+  @include mobile {
+    overflow: hidden;
+  }
+
   .arrow {
     height: 50px;
     position: absolute;
