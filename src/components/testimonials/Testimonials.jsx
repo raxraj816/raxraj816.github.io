@@ -17,7 +17,6 @@ export default function Testimonials() {
       img: "assets/amol.jpg",
       icon: "assets/linkedin.png",
       desc: "Raj Kumar did an exceptional job on our projects with him at Tudip Technologies. As I remember, Raj Kumar was a very productive person and is a multi-skilled person with vast knowledge. He is careful, proactive, self motivated and intelligent team player.",
-      featured: true,
     },
   ];
   return (
@@ -25,7 +24,7 @@ export default function Testimonials() {
       <h1>Testimonials</h1>
       <div className="container">
         {data.map((d) => (
-          <div key={d?.id} className={d.featured ? "card featured" : "card"}>
+          <div key={d?.id} className="card">
             <div className="top">
               <img src="assets/right-arrow.png" className="left" alt="" />
               <img className="user" src={d.img} alt="" />

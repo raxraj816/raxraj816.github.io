@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Full Stack Developer."],
+      strings: ["Full Stack Developer.", "FAST LEARNERS WIN."],
     });
   }, []);
 
@@ -35,7 +35,7 @@ export default function Intro() {
             </a>
           </h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            <span ref={textRef}></span>
           </h3>
         </div>
         <a className="down-arrow" href="#portfolio">
